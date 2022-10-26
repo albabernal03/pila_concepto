@@ -54,11 +54,10 @@ for i in range(10):
     pila.apilar(int(input("Ingrese un numero: ")))
 
 while not pila.pilaVacia():
-    if pila.en_cima() % 2 == 0: # decimos que si el numero que esta en la cima de la pila es par, lo apile en la pila de pares
+    if pila.en_cima() % 2 == 0: # decimos que si el numero que esta en la cima de la pila es par, lo apile en la pila de pares # pongpo pila. para que sepa que es un atributo de la clase pila
         pares.apilar(pila.desapilar()) # apilamos el numero que esta en la cima de la pila en la pila de pares y lo desapilamos de la pila original
     else:
-        impares.apilar(pila.desapilar())
-
+        impares.apilar(pila.desapilar()) #esto de usar impares.apilar(pila.desapilar()) es para que no se pierda el numero que esta en la cima de la pila original y se apile en la pila de impares y lo desapilamos de la pila original, es decir pila.desapilar() lo metemos dentro de los parentesis de impares.apilar() para que no se pierda el numero que esta en la cima de la pila original
 print("Pila de pares: ")
 
 
